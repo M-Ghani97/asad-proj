@@ -1,0 +1,155 @@
+init_config: null
+instances:
+- built_by: Glance
+  detailed: true
+  dimensions:
+    component: glance-api
+    service: image-service
+  exact_match: false
+  name: glance-api
+  search_string:
+  - glance-api
+- built_by: Nova
+  detailed: true
+  dimensions:
+    component: nova-compute
+    service: compute
+  exact_match: false
+  name: nova-compute
+  search_string:
+  - nova-compute
+- built_by: Nova
+  detailed: true
+  dimensions:
+    component: nova-conductor
+    service: compute
+  exact_match: false
+  name: nova-conductor
+  search_string:
+  - nova-conductor
+- built_by: Nova
+  detailed: true
+  dimensions:
+    component: nova-scheduler
+    service: compute
+  exact_match: false
+  name: nova-scheduler
+  search_string:
+  - nova-scheduler
+- built_by: Nova
+  detailed: true
+  dimensions:
+    component: nova-novncproxy
+    service: compute
+  exact_match: false
+  name: nova-novncproxy
+  search_string:
+  - nova-novncproxy
+- built_by: Nova
+  detailed: true
+  dimensions:
+    component: nova-api
+    service: compute
+  exact_match: false
+  name: nova-api
+  search_string:
+  - nova-api
+- built_by: Ovsvapp
+  detailed: true
+  dimensions:
+    component: ovsdb-server
+    service: OVSvApp-ServiceVM
+  exact_match: false
+  name: ovsdb-server
+  search_string:
+  - ovsdb-server
+- built_by: Ovsvapp
+  detailed: true
+  dimensions:
+    component: ovs-vswitchd
+    service: OVSvApp-ServiceVM
+  exact_match: false
+  name: ovs-vswitchd
+  search_string:
+  - ovs-vswitchd
+- built_by: RabbitMQ
+  detailed: false
+  dimensions:
+    service: rabbitmq
+  exact_match: true
+  name: epmd
+  search_string:
+  - epmd
+- built_by: RabbitMQ
+  detailed: true
+  dimensions:
+    service: rabbitmq
+  name: rabbitmq
+  username: rabbitmq
+- built_by: Cinder
+  detailed: true
+  dimensions:
+    component: cinder-scheduler
+    service: block-storage
+  exact_match: false
+  name: cinder-scheduler
+  search_string:
+  - cinder-scheduler
+- built_by: Cinder
+  detailed: true
+  dimensions:
+    component: cinder-api
+    service: block-storage
+  exact_match: false
+  name: cinder-api
+  search_string:
+  - cinder-api
+- built_by: HAProxy
+  detailed: true
+  dimensions:
+    service: haproxy
+  exact_match: false
+  name: haproxy
+  search_string:
+  - haproxy
+- built_by: Neutron
+  detailed: true
+  dimensions:
+    component: neutron-server
+    service: networking
+  exact_match: false
+  name: neutron-server
+  search_string:
+  - neutron-server
+- built_by: Neutron
+  detailed: true
+  dimensions:
+    component: neutron-rootwrap
+    service: networking
+  exact_match: false
+  name: neutron-rootwrap
+  search_string:
+  - neutron-rootwrap
+- built_by: Cassandra
+  detailed: true
+  dimensions:
+    component: cassandra
+    service: cassandra
+  name: cassandra
+  username: cassandra
+- built_by: MonAgent
+  detailed: true
+  dimensions:
+    component: monasca-agent
+    service: monitoring
+  name: monasca-agent
+  username: mon-agent
+- built_by: MonPersister
+  detailed: true
+  dimensions:
+    component: monasca-persister
+    service: monitoring
+  exact_match: false
+  name: monasca-persister
+  search_string:
+  - monasca-persister

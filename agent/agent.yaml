@@ -1,0 +1,38 @@
+Api:
+  amplifier: 0
+  backlog_send_rate: 1000
+  ca_file: null
+  endpoint_type: null
+  insecure: false
+  keystone_url: http://10.0.0.4/identity
+  max_batch_size: 0
+  max_buffer_size: 1000
+  max_measurement_buffer_size: -1
+  password: letmein
+  project_domain_id: default
+  project_domain_name: Default
+  project_id: cb5032be652347288d32303ca631a1d0
+  project_name: admin
+  region_name: RegionOne
+  service_type: null
+  url: http://10.0.0.4:8070/v2.0
+  user_domain_id: default
+  user_domain_name: Default
+  username: admin
+Logging:
+  collector_log_file: /var/log/monasca/agent/collector.log
+  enable_logrotate: true
+  forwarder_log_file: /var/log/monasca/agent/forwarder.log
+  log_level: WARN
+  statsd_log_file: /var/log/monasca/agent/statsd.log
+Main:
+  check_freq: 30
+  collector_restart_interval: 24
+  dimensions: {}
+  hostname: openstack
+  num_collector_threads: 1
+  pool_full_max_retries: 4
+  sub_collection_warn: 6
+Statsd:
+  monasca_statsd_interval: 20
+  monasca_statsd_port: 8125

@@ -1,0 +1,50 @@
+init_config: null
+instances:
+- built_by: Neutron
+  dimensions:
+    service: networking
+  match_pattern: .*v2.0.*
+  name: networking-api
+  timeout: 10
+  url: http://localhost:9696
+  use_keystone: true
+- built_by: Glance
+  dimensions:
+    service: image
+  match_pattern: .*v2.9.*
+  name: image-api
+  timeout: 10
+  url: http://localhost/image
+  use_keystone: true
+- built_by: Keystone
+  dimensions:
+    service: identity
+  match_pattern: .*v3.14.*
+  name: identity-api
+  timeout: 10
+  url: http://localhost/identity
+  use_keystone: true
+- built_by: Placement
+  dimensions:
+    service: placement
+  match_pattern: .*v1.0.*
+  name: placement-api
+  timeout: 10
+  url: http://localhost/placement
+  use_keystone: true
+- built_by: Compute
+  dimensions:
+    service: compute
+  match_pattern: .*v2.0.*
+  name: compute-api
+  timeout: 10
+  url: http://localhost/compute
+  use_keystone: true
+- built_by: Cinder
+  dimensions:
+    service: blockstorage
+  match_pattern: .*v3.0.*
+  name: blockstorage-api
+  timeout: 10
+  url: http://localhost/volume
+  use_keystone: true
